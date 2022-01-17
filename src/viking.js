@@ -77,6 +77,7 @@ class War {
     this.saxonArmy.push(Saxon)
   }
 
+  
   vikingAttack () {
 
     let vikingRandom = this.vikingArmy[Math.floor(Math.random() * this.vikingArmy.length)]
@@ -88,7 +89,7 @@ class War {
       this.saxonArmy.splice(this.saxonArmy.indexOf(saxonRandom, 1))
     }
 
-    return `A Saxon has died in combat`
+    return `A Saxon has died in combat` // Resultado esperado do return incorreto. Deveria seguir o padrão do saxonAttack
   }
 
   saxonAttack () {
